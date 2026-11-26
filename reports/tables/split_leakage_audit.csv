@@ -1,0 +1,4 @@
+﻿cap_tap,nhom_giao_nhau,hash_pixel_giao_nhau,anh_nen_goc_giao_nhau
+train / val,0,0,0
+train / test,0,0,0
+val / test,0,0,0

@@ -1,0 +1,8 @@
+﻿model,score_method,default_rule,default_val_recall,default_val_fpr,default_val_f1,selected_threshold,threshold_rule,valid_candidates_count,val_recall_selected,val_fpr_selected,val_f1_selected,status
+SVM RBF,decision_function,Pipeline.predict(),0.9607,0.0154,0.97289999999999999,-0.018045134113052197,score >= -0.018045,34,0.96430000000000005,0.0154,0.97470000000000001,target_met
+AdaBoost,decision_function,Pipeline.predict(),0.97499999999999998,0.0269,0.97499999999999998,0.026787453434552827,score >= 0.026787,34,0.97140000000000004,0.019199999999999998,0.97670000000000001,target_met
+Random Forest,"predict_proba[:, 1]",Pipeline.predict(),0.95709999999999995,0.0038,0.97629999999999995,0.50616666666666676,score >= 0.506167,33,0.95709999999999995,0.0038,0.97629999999999995,target_met
+Logistic Regression,decision_function,Pipeline.predict(),0.93210000000000004,0.0654,0.9355,0.53891420364379883,score >= 0.538914,5,0.9143,0.050000000000000003,0.93259999999999998,target_met
+k-NN,"predict_proba[:, 1]",Pipeline.predict(),0.93569999999999998,0.057700000000000001,0.94079999999999997,,keep_default (no valid threshold meets Recall >= 0.90 and FPR <= 0.05),0,0.93569999999999998,0.057700000000000001,0.94079999999999997,target_not_met_keep_default
+Decision Tree,"predict_proba[:, 1]",Pipeline.predict(),0.92500000000000004,0.084599999999999995,0.9234,,keep_default (no valid threshold meets Recall >= 0.90 and FPR <= 0.05),0,0.92500000000000004,0.084599999999999995,0.9234,target_not_met_keep_default
+DummyClassifier,"predict_proba[:, 1]",Pipeline.predict(),1,1,0.68289999999999995,,keep_default (baseline),0,1,1,0.68289999999999995,baseline_default

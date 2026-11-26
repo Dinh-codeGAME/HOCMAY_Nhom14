@@ -1,0 +1,15 @@
+﻿pham_vi,van_de,so_dong,tong_so_dong,ty_le_phan_tram
+Toàn bộ danh mục nguồn,Thiếu source_image_id,0,13700,0.0
+Toàn bộ danh mục nguồn,Thiếu source_path,0,13700,0.0
+Toàn bộ danh mục nguồn,Thiếu label,77,13700,0.56
+Toàn bộ danh mục nguồn,Label có giá trị ngoài 0/1,0,13700,0.0
+Toàn bộ danh mục nguồn,Trùng source_image_id: số dòng liên quan,0,13700,0.0
+Toàn bộ danh mục nguồn,Trùng source_path: số dòng liên quan,0,13700,0.0
+Nhóm nguồn được chọn,Thiếu source_image_id,0,13623,0.0
+Nhóm nguồn được chọn,Thiếu source_path,0,13623,0.0
+Nhóm nguồn được chọn,Thiếu label,0,13623,0.0
+Nhóm nguồn được chọn,Label có giá trị ngoài 0/1,0,13623,0.0
+Nhóm nguồn được chọn,Trùng source_image_id: số dòng liên quan,0,13623,0.0
+Nhóm nguồn được chọn,Trùng source_path: số dòng liên quan,0,13623,0.0
+Kiểm tra tính nhất quán,LFW có label khác 1 hoặc thiếu,0,13233,0.0
+Kiểm tra tính nhất quán,Nền đã chấp nhận có label khác 0 hoặc thiếu,0,390,0.0

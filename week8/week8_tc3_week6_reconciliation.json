@@ -1,0 +1,59 @@
+{
+  "generated_at_utc": "2026-11-26T16:28:38.664016+00:00",
+  "total_fits_executed": 10,
+  "oof_samples_compared": 2511,
+  "oof_y_pred_mismatches": 0,
+  "oof_decision_score_max_abs_diff": 0.0,
+  "fold_metric_max_abs_diffs": {
+    "val_tn": 0.0,
+    "val_fp": 0.0,
+    "val_fn": 0.0,
+    "val_tp": 0.0,
+    "val_f1": 1.1102230246251565e-16,
+    "val_recall": 1.1102230246251565e-16,
+    "val_fpr": 9.020562075079397e-17,
+    "val_roc_auc": 1.1102230246251565e-16
+  },
+  "fit_time_comparison_258": [
+    {
+      "fold": 1,
+      "week6_fit_time_s": 8.890386399998533,
+      "week8_fit_time_s": 9.51397949999955,
+      "diff_s": 0.6235931000010169
+    },
+    {
+      "fold": 2,
+      "week6_fit_time_s": 8.760474999999133,
+      "week8_fit_time_s": 8.912039599999844,
+      "diff_s": 0.15156460000071093
+    },
+    {
+      "fold": 3,
+      "week6_fit_time_s": 9.023487399997975,
+      "week8_fit_time_s": 8.71598289999929,
+      "diff_s": -0.3075044999986858
+    },
+    {
+      "fold": 4,
+      "week6_fit_time_s": 8.701255600000877,
+      "week8_fit_time_s": 8.571246200001042,
+      "diff_s": -0.1300093999998353
+    },
+    {
+      "fold": 5,
+      "week6_fit_time_s": 9.097973100000672,
+      "week8_fit_time_s": 8.910640000000058,
+      "diff_s": -0.18733310000061465
+    }
+  ],
+  "selectkbest_k128_stability": {
+    "unique_features_selected_across_5_folds": 137,
+    "features_selected_in_all_5_folds": 118
+  },
+  "artifacts": {
+    "folds_csv": "week8/week8_tc3_adaboost_folds.csv",
+    "summary_csv": "week8/week8_tc3_adaboost_summary.csv",
+    "oof_csv": "week8/week8_tc3_adaboost_oof_predictions.csv",
+    "selected_features_csv": "week8/week8_tc3_selected_features_by_fold.csv"
+  }
+}

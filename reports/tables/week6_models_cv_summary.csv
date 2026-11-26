@@ -1,0 +1,99 @@
+﻿model,split,metric,mean,std
+DummyClassifier,validation_cv,accuracy,0.508564,0.001359
+DummyClassifier,validation_cv,precision,0.508564,0.001359
+DummyClassifier,validation_cv,recall,1.0,0.0
+DummyClassifier,validation_cv,f1,0.674235,0.001194
+DummyClassifier,validation_cv,fpr,1.0,0.0
+DummyClassifier,validation_cv,roc_auc,0.5,0.0
+DummyClassifier,validation_cv,fit_time,0.000867,0.000188
+DummyClassifier,validation_cv,predict_val_time,0.000202,3.1e-05
+DummyClassifier,train_cv,accuracy,0.508562,0.00034
+DummyClassifier,train_cv,precision,0.508562,0.00034
+DummyClassifier,train_cv,recall,1.0,0.0
+DummyClassifier,train_cv,f1,0.674234,0.000299
+DummyClassifier,train_cv,fpr,1.0,0.0
+DummyClassifier,train_cv,roc_auc,0.5,0.0
+AdaBoost,validation_cv,accuracy,0.964958,0.011559
+AdaBoost,validation_cv,precision,0.961281,0.010151
+AdaBoost,validation_cv,recall,0.970218,0.019325
+AdaBoost,validation_cv,f1,0.965623,0.011632
+AdaBoost,validation_cv,fpr,0.0405,0.010814
+AdaBoost,validation_cv,roc_auc,0.992999,0.003729
+AdaBoost,validation_cv,fit_time,8.894715,0.150573
+AdaBoost,validation_cv,predict_val_time,0.034127,0.008262
+AdaBoost,train_cv,accuracy,0.993529,0.00151
+AdaBoost,train_cv,precision,0.992774,0.002264
+AdaBoost,train_cv,recall,0.994518,0.001328
+AdaBoost,train_cv,f1,0.993644,0.001478
+AdaBoost,train_cv,fpr,0.007497,0.002366
+AdaBoost,train_cv,roc_auc,0.99985,3.7e-05
+Decision Tree,validation_cv,accuracy,0.899235,0.019392
+Decision Tree,validation_cv,precision,0.890655,0.024183
+Decision Tree,validation_cv,recall,0.914626,0.017681
+Decision Tree,validation_cv,f1,0.902356,0.018473
+Decision Tree,validation_cv,fpr,0.116713,0.027479
+Decision Tree,validation_cv,roc_auc,0.932022,0.024601
+Decision Tree,validation_cv,fit_time,0.374884,0.011497
+Decision Tree,validation_cv,predict_val_time,0.000778,3.7e-05
+Decision Tree,train_cv,accuracy,0.962067,0.004052
+Decision Tree,train_cv,precision,0.957334,0.007668
+Decision Tree,train_cv,recall,0.968675,0.007123
+Decision Tree,train_cv,f1,0.962929,0.003907
+Decision Tree,train_cv,fpr,0.044778,0.00861
+Decision Tree,train_cv,roc_auc,0.985925,0.001863
+Random Forest,validation_cv,accuracy,0.961371,0.010858
+Random Forest,validation_cv,precision,0.972306,0.014927
+Random Forest,validation_cv,recall,0.951422,0.019647
+Random Forest,validation_cv,f1,0.96156,0.011017
+Random Forest,validation_cv,fpr,0.02837,0.015792
+Random Forest,validation_cv,roc_auc,0.993227,0.003548
+Random Forest,validation_cv,fit_time,5.114108,0.182739
+Random Forest,validation_cv,predict_val_time,0.031701,0.004446
+Random Forest,train_cv,accuracy,0.999701,0.000244
+Random Forest,train_cv,precision,0.999804,0.000391
+Random Forest,train_cv,recall,0.999609,0.000479
+Random Forest,train_cv,f1,0.999706,0.00024
+Random Forest,train_cv,fpr,0.000203,0.000406
+Random Forest,train_cv,roc_auc,1.0,1e-06
+Logistic Regression,validation_cv,accuracy,0.943851,0.010543
+Logistic Regression,validation_cv,precision,0.938055,0.019152
+Logistic Regression,validation_cv,recall,0.952996,0.013166
+Logistic Regression,validation_cv,f1,0.945284,0.010032
+Logistic Regression,validation_cv,fpr,0.065598,0.021799
+Logistic Regression,validation_cv,roc_auc,0.983089,0.007001
+Logistic Regression,validation_cv,fit_time,0.095717,0.003594
+Logistic Regression,validation_cv,predict_val_time,0.001368,0.000146
+Logistic Regression,train_cv,accuracy,0.95918,0.002332
+Logistic Regression,train_cv,precision,0.961318,0.003123
+Logistic Regression,train_cv,recall,0.9583,0.0023
+Logistic Regression,train_cv,f1,0.959804,0.002292
+Logistic Regression,train_cv,fpr,0.039909,0.00328
+Logistic Regression,train_cv,roc_auc,0.990686,0.000991
+SVM RBF,validation_cv,accuracy,0.970128,0.009096
+SVM RBF,validation_cv,precision,0.977883,0.008849
+SVM RBF,validation_cv,recall,0.963162,0.019012
+SVM RBF,validation_cv,f1,0.970326,0.009303
+SVM RBF,validation_cv,fpr,0.022705,0.009474
+SVM RBF,validation_cv,roc_auc,0.993392,0.003327
+SVM RBF,validation_cv,fit_time,0.155429,0.008284
+SVM RBF,validation_cv,predict_val_time,0.07497,0.004635
+SVM RBF,train_cv,accuracy,0.988251,0.001075
+SVM RBF,train_cv,precision,0.990371,0.001139
+SVM RBF,train_cv,recall,0.986492,0.001568
+SVM RBF,train_cv,f1,0.988426,0.00106
+SVM RBF,train_cv,fpr,0.009928,0.001186
+SVM RBF,train_cv,roc_auc,0.998767,0.000241
+k-NN,validation_cv,accuracy,0.933485,0.010013
+k-NN,validation_cv,precision,0.92988,0.01507
+k-NN,validation_cv,recall,0.940472,0.016913
+k-NN,validation_cv,f1,0.934977,0.009877
+k-NN,validation_cv,fpr,0.073754,0.017233
+k-NN,validation_cv,roc_auc,0.971084,0.007215
+k-NN,validation_cv,fit_time,0.010067,0.000567
+k-NN,validation_cv,predict_val_time,0.018231,0.003254
+k-NN,train_cv,accuracy,0.955197,0.000836
+k-NN,train_cv,precision,0.953841,0.003132
+k-NN,train_cv,recall,0.9583,0.003548
+k-NN,train_cv,f1,0.956054,0.000836
+k-NN,train_cv,fpr,0.048015,0.003606
+k-NN,train_cv,roc_auc,0.993705,0.000425

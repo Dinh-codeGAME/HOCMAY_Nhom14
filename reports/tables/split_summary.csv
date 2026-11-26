@@ -1,0 +1,4 @@
+﻿split,Non-face,Face,tong_mau,ty_le_phan_tram,so_nhom
+train,1234,1277,2511,69.96,1128
+val,260,280,540,15.05,243
+test,295,243,538,14.99,243

@@ -1,0 +1,234 @@
+{
+  "protocol_name": "Week 6 Final Evaluation Protocol",
+  "project": "FaceDetection_Week4",
+  "dataset": {
+    "train_samples": 2511,
+    "validation_samples": 540,
+    "test_samples": 538,
+    "features_count": 258,
+    "features_type": "Haar-like (float32)"
+  },
+  "initial_protocol_locked_at": "2026-11-13T04:33:12.695715+00:00",
+  "metadata_enhanced_at": "2026-11-13T05:12:39.632130+00:00",
+  "environment": {
+    "scikit_learn": "1.9.1",
+    "numpy": "2.4.6",
+    "pandas": "3.0.5"
+  },
+  "threshold_selection_criteria": {
+    "dataset_used": "held-out validation (540 samples)",
+    "condition": "Recall >= 0.90 and FPR <= 0.05",
+    "primary_objective": "Maximize F1-score",
+    "tie_breaking": [
+      "Lower FPR",
+      "Higher Recall"
+    ],
+    "fallback_if_not_met": "Keep model default Pipeline.predict() without modification"
+  },
+  "models": {
+    "SVM RBF": {
+      "score_method": "decision_function",
+      "default_rule": "Pipeline.predict()",
+      "status": "target_met",
+      "selected_threshold": -0.018045134113052197,
+      "decision_rule": "score >= -0.018045",
+      "hyperparameters": {
+        "pipeline_structure": [
+          "preprocess: StandardScaler()",
+          "clf: SVC(kernel='rbf')"
+        ],
+        "C": 1.0,
+        "kernel": "rbf",
+        "gamma": "scale",
+        "probability": false,
+        "random_state": "Ignored when probability=False (deterministic)"
+      },
+      "validation_metrics": {
+        "default": {
+          "recall": 0.9607,
+          "fpr": 0.0154,
+          "f1": 0.9729
+        },
+        "selected": {
+          "recall": 0.9643,
+          "fpr": 0.0154,
+          "f1": 0.9747
+        }
+      }
+    },
+    "AdaBoost": {
+      "score_method": "decision_function",
+      "default_rule": "Pipeline.predict()",
+      "status": "target_met",
+      "selected_threshold": 0.026787453434552827,
+      "decision_rule": "score >= 0.026787",
+      "hyperparameters": {
+        "pipeline_structure": [
+          "preprocess: passthrough",
+          "clf: AdaBoostClassifier"
+        ],
+        "estimator": "DecisionTreeClassifier(max_depth=1, random_state=42)",
+        "n_estimators": 100,
+        "learning_rate": 1.0,
+        "algorithm": "SAMME.R",
+        "random_state": 42
+      },
+      "validation_metrics": {
+        "default": {
+          "recall": 0.975,
+          "fpr": 0.0269,
+          "f1": 0.975
+        },
+        "selected": {
+          "recall": 0.9714,
+          "fpr": 0.0192,
+          "f1": 0.9767
+        }
+      }
+    },
+    "Random Forest": {
+      "score_method": "predict_proba[:, 1]",
+      "default_rule": "Pipeline.predict()",
+      "status": "target_met",
+      "selected_threshold": 0.5061666666666668,
+      "decision_rule": "score >= 0.506167",
+      "hyperparameters": {
+        "pipeline_structure": [
+          "preprocess: passthrough",
+          "clf: RandomForestClassifier"
+        ],
+        "n_estimators": 200,
+        "min_samples_leaf": 2,
+        "n_jobs": 1,
+        "random_state": 42
+      },
+      "validation_metrics": {
+        "default": {
+          "recall": 0.9571,
+          "fpr": 0.0038,
+          "f1": 0.9763
+        },
+        "selected": {
+          "recall": 0.9571,
+          "fpr": 0.0038,
+          "f1": 0.9763
+        }
+      }
+    },
+    "Logistic Regression": {
+      "score_method": "decision_function",
+      "default_rule": "Pipeline.predict()",
+      "status": "target_met",
+      "selected_threshold": 0.5389142036437988,
+      "decision_rule": "score >= 0.538914",
+      "hyperparameters": {
+        "pipeline_structure": [
+          "preprocess: StandardScaler()",
+          "clf: LogisticRegression"
+        ],
+        "C": 1.0,
+        "solver": "lbfgs",
+        "max_iter": 3000,
+        "random_state": "42 (no effect for solver='lbfgs')"
+      },
+      "validation_metrics": {
+        "default": {
+          "recall": 0.9321,
+          "fpr": 0.0654,
+          "f1": 0.9355
+        },
+        "selected": {
+          "recall": 0.9143,
+          "fpr": 0.05,
+          "f1": 0.9326
+        }
+      }
+    },
+    "k-NN": {
+      "score_method": "predict_proba[:, 1]",
+      "default_rule": "Pipeline.predict()",
+      "status": "target_not_met_keep_default",
+      "selected_threshold": null,
+      "decision_rule": "Pipeline.predict()",
+      "hyperparameters": {
+        "pipeline_structure": [
+          "preprocess: StandardScaler()",
+          "clf: KNeighborsClassifier"
+        ],
+        "n_neighbors": 5,
+        "weights": "uniform",
+        "metric": "minkowski",
+        "p": 2,
+        "n_jobs": 1,
+        "random_state": "None (deterministic algorithm)"
+      },
+      "validation_metrics": {
+        "default": {
+          "recall": 0.9357,
+          "fpr": 0.0577,
+          "f1": 0.9408
+        },
+        "selected": {
+          "recall": 0.9357,
+          "fpr": 0.0577,
+          "f1": 0.9408
+        }
+      }
+    },
+    "Decision Tree": {
+      "score_method": "predict_proba[:, 1]",
+      "default_rule": "Pipeline.predict()",
+      "status": "target_not_met_keep_default",
+      "selected_threshold": null,
+      "decision_rule": "Pipeline.predict()",
+      "hyperparameters": {
+        "pipeline_structure": [
+          "preprocess: passthrough",
+          "clf: DecisionTreeClassifier"
+        ],
+        "max_depth": 5,
+        "min_samples_leaf": 2,
+        "random_state": 42
+      },
+      "validation_metrics": {
+        "default": {
+          "recall": 0.925,
+          "fpr": 0.0846,
+          "f1": 0.9234
+        },
+        "selected": {
+          "recall": 0.925,
+          "fpr": 0.0846,
+          "f1": 0.9234
+        }
+      }
+    },
+    "DummyClassifier": {
+      "score_method": "predict_proba[:, 1]",
+      "default_rule": "Pipeline.predict()",
+      "status": "baseline_default",
+      "selected_threshold": null,
+      "decision_rule": "Pipeline.predict() [most_frequent]",
+      "hyperparameters": {
+        "pipeline_structure": [
+          "preprocess: passthrough",
+          "clf: DummyClassifier"
+        ],
+        "strategy": "most_frequent",
+        "random_state": "None"
+      },
+      "validation_metrics": {
+        "default": {
+          "recall": 1.0,
+          "fpr": 1.0,
+          "f1": 0.6829
+        },
+        "selected": {
+          "recall": 1.0,
+          "fpr": 1.0,
+          "f1": 0.6829
+        }
+      }
+    }
+  }
+}

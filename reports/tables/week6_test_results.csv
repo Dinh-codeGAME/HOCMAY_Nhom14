@@ -1,0 +1,15 @@
+﻿model,mode,decision_rule,tn,fp,fn,tp,accuracy,recall,precision,f1,fpr,roc_auc,meets_target
+SVM RBF,default,Pipeline.predict(),285,10,7,236,0.9684,0.9712,0.9593,0.9652,0.0339,0.9942,True
+SVM RBF,selected,score >= -0.018045,285,10,7,236,0.9684,0.9712,0.9593,0.9652,0.0339,0.9942,True
+AdaBoost,default,Pipeline.predict(),282,13,9,234,0.9591,0.963,0.9474,0.9551,0.0441,0.9935,True
+AdaBoost,selected,score >= 0.026787,284,11,11,232,0.9591,0.9547,0.9547,0.9547,0.0373,0.9935,True
+Random Forest,default,Pipeline.predict(),287,8,13,230,0.961,0.9465,0.9664,0.9563,0.0271,0.9929,True
+Random Forest,selected,score >= 0.506167,288,7,15,228,0.9591,0.9383,0.9702,0.954,0.0237,0.9929,True
+Logistic Regression,default,Pipeline.predict(),269,26,8,235,0.9368,0.9671,0.9004,0.9325,0.0881,0.9815,False
+Logistic Regression,selected,score >= 0.538914,274,21,12,231,0.9387,0.9506,0.9167,0.9333,0.0712,0.9815,False
+k-NN,default,Pipeline.predict(),272,23,13,230,0.9331,0.9465,0.9091,0.9274,0.078,0.9816,False
+k-NN,selected,Pipeline.predict(),272,23,13,230,0.9331,0.9465,0.9091,0.9274,0.078,0.9816,False
+Decision Tree,default,Pipeline.predict(),240,55,29,214,0.8439,0.8807,0.7955,0.8359,0.1864,0.8925,False
+Decision Tree,selected,Pipeline.predict(),240,55,29,214,0.8439,0.8807,0.7955,0.8359,0.1864,0.8925,False
+DummyClassifier,default,Pipeline.predict(),0,295,0,243,0.4517,1.0,0.4517,0.6223,1.0,0.5,False
+DummyClassifier,selected,Pipeline.predict() [most_frequent],0,295,0,243,0.4517,1.0,0.4517,0.6223,1.0,0.5,False

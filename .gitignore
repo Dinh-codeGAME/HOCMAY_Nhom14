@@ -1,0 +1,58 @@
+# Raw and processed datasets (shared separately due to size / data-sharing rules)
+data/raw/
+data/processed/
+
+# Deliverable archive bundles and review PDFs
+*.zip
+*.pdf
+
+# Trained binary model weights (regenerate locally via: python train_export_demo.py)
+models/demo/*.joblib
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python & Jupyter caches
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Secrets and environment variables
+.env
+.env.*
+*token*
+*secret*
+*.pem
+*.key
+*.credentials
+
+# Extracted temporary review folders
+week8/tc7_tc8_extracted/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.toc
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.lof
+*.lot
+*.xdv
+*.nav
+*.snm
+*.vrb
+*.bcf
+*.run.xml
+
+# OS metadata
+Thumbs.db
+.DS_Store
+desktop.ini

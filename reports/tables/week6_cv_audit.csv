@@ -1,0 +1,6 @@
+﻿fold,train_samples,val_samples,train_classes,val_classes,index_overlap,group_overlap,train_face,train_non_face,val_face,val_non_face,val_face_ratio
+1,2008,503,2,2,0,0,1022,986,255,248,0.507
+2,2009,502,2,2,0,0,1021,988,256,246,0.51
+3,2008,503,2,2,0,0,1022,986,255,248,0.507
+4,2009,502,2,2,0,0,1021,988,256,246,0.51
+5,2010,501,2,2,0,0,1022,988,255,246,0.509

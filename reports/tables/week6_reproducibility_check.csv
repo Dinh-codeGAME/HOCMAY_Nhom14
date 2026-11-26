@@ -1,0 +1,8 @@
+﻿tieu_chi_kiem_tra,ket_qua,chi_tiet
+Đường dẫn thư mục kiểm thử chứa khoảng trắng,ĐẠT,Đã chạy tại 'Test Week6 Repro' tách biệt hoàn toàn với dự án gốc
+Khả năng chạy độc lập từ đầu đến cuối,ĐẠT,"100% cell thực thi thành công, 0 lỗi ngoại lệ (error cells = 0)"
+Tính bất biến của tệp phân công fold,ĐẠT,"Mã băm SHA-256 khớp 100% (b87eaaf62171...), không bị ghi đè"
+Độ khớp số liệu mô hình cơ sở (Baseline),ĐẠT,Toàn bộ số đo folds và summary khớp tuyệt đối với mốc trước đó
+Kiểm tra kỹ thuật 6 Pipeline trên Fold 1,ĐẠT,"Cả 6 mô hình hoàn thành fit/predict, điểm số hợp lệ, scaler học đúng 2008 mẫu"
+Kiểm soát tập Validation và Test giữ riêng,ĐẠT,Tập val (540 mẫu) và test (538 mẫu) không bị sử dụng trong fit hoặc đánh giá
+Xử lý cảnh báo API của SVC,ĐẠT,"Hiển thị FutureWarning về tham số probability, không tắt cảnh báo"

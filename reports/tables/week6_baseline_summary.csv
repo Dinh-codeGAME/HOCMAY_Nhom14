@@ -1,0 +1,13 @@
+﻿split,metric,mean,std
+validation_cv,accuracy,0.508564,0.001359
+validation_cv,precision,0.508564,0.001359
+validation_cv,recall,1.0,0.0
+validation_cv,f1,0.674235,0.001194
+validation_cv,fpr,1.0,0.0
+validation_cv,roc_auc,0.5,0.0
+train_cv,accuracy,0.508562,0.00034
+train_cv,precision,0.508562,0.00034
+train_cv,recall,1.0,0.0
+train_cv,f1,0.674234,0.000299
+train_cv,fpr,1.0,0.0
+train_cv,roc_auc,0.5,0.0

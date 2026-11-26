@@ -1,0 +1,7 @@
+﻿model,fold,train_samples,val_samples,group_overlap,fit_predict_status,prediction_scores_check,scaler_check
+AdaBoost,1,2008,503,0,ĐẠT,ĐẠT (decision_function),Không áp dụng (passthrough)
+Decision Tree,1,2008,503,0,ĐẠT,"ĐẠT (predict_proba[:, 1])",Không áp dụng (passthrough)
+Random Forest,1,2008,503,0,ĐẠT,"ĐẠT (predict_proba[:, 1])",Không áp dụng (passthrough)
+Logistic Regression,1,2008,503,0,ĐẠT,ĐẠT (decision_function),"ĐẠT (n_samples_seen=2008, mean khớp)"
+SVM RBF,1,2008,503,0,ĐẠT,ĐẠT (decision_function),"ĐẠT (n_samples_seen=2008, mean khớp)"
+k-NN,1,2008,503,0,ĐẠT,"ĐẠT (predict_proba[:, 1])","ĐẠT (n_samples_seen=2008, mean khớp)"

@@ -1,0 +1,75 @@
+{
+  "generated_at_utc": "2026-11-26T17:04:46.231195+00:00",
+  "selection_rationale": "Chốt AdaBoost (258 đặc trưng) trước bước đánh giá test vì có Recall CV trung bình cao nhất (0.9702) trong số các mô hình đạt cả 3 mục tiêu CV (Recall >= 0.90, FPR <= 0.05, ROC-AUC). SVM RBF có F1 CV cao hơn (0.9703 vs 0.9656) và FPR CV thấp hơn (0.0227 vs 0.0405), còn lựa chọn AdaBoost ưu tiên Recall theo mục tiêu không bỏ sót khuôn mặt của đề tài.",
+  "test_set_usage_disclosure": "Đánh giá lại trên cùng 538 mẫu tập test giữ riêng đã dùng ở Tuần 6 bằng Pipeline.predict(), giữ nguyên ngưỡng và kết quả Tuần 6.",
+  "cv_models_meeting_all_3_goals": {
+    "AdaBoost": {
+      "recall_mean": 0.970218,
+      "recall_std": 0.019325,
+      "fpr_mean": 0.0405,
+      "fpr_std": 0.010814,
+      "f1_mean": 0.965623,
+      "f1_std": 0.011632,
+      "roc_auc_mean": 0.992999,
+      "roc_auc_std": 0.003729
+    },
+    "SVM RBF": {
+      "recall_mean": 0.963162,
+      "recall_std": 0.019012,
+      "fpr_mean": 0.022705,
+      "fpr_std": 0.009474,
+      "f1_mean": 0.970326,
+      "f1_std": 0.009303,
+      "roc_auc_mean": 0.993392,
+      "roc_auc_std": 0.003327
+    },
+    "Random Forest": {
+      "recall_mean": 0.951422,
+      "recall_std": 0.019647,
+      "fpr_mean": 0.02837,
+      "fpr_std": 0.015792,
+      "f1_mean": 0.96156,
+      "f1_std": 0.011017,
+      "roc_auc_mean": 0.993227,
+      "roc_auc_std": 0.003548
+    }
+  },
+  "test_metrics_exact": {
+    "tn": 282,
+    "fp": 13,
+    "fn": 9,
+    "tp": 234,
+    "accuracy": 0.9591078066914498,
+    "precision": 0.9473684210526315,
+    "recall": 0.9629629629629629,
+    "f1": 0.9551020408163265,
+    "fpr": 0.04406779661016949,
+    "roc_auc": 0.9934714375392341
+  },
+  "fit_full_train_time_s": 8.65424560000065,
+  "predict_test_time_s": 0.023666400000365684,
+  "week6_default_test_comparison": {
+    "week6_row": {
+      "tn": 282,
+      "fp": 13,
+      "fn": 9,
+      "tp": 234,
+      "f1_rounded_4": 0.9551,
+      "recall_rounded_4": 0.963,
+      "fpr_rounded_4": 0.0441,
+      "roc_auc_rounded_4": 0.9935
+    },
+    "week8_row_rounded_4": {
+      "tn": 282,
+      "fp": 13,
+      "fn": 9,
+      "tp": 234,
+      "f1_rounded_4": 0.9551,
+      "recall_rounded_4": 0.963,
+      "fpr_rounded_4": 0.0441,
+      "roc_auc_rounded_4": 0.9935
+    },
+    "test_y_pred_mismatches": 0,
+    "test_decision_score_max_abs_diff": 0.0
+  }
+}

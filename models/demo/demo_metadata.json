@@ -1,0 +1,100 @@
+{
+  "export_timestamp": "2026-11-13T04:48:48.533058+00:00",
+  "python_version": "3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]",
+  "library_versions": {
+    "scikit_learn": "1.9.1",
+    "joblib": "1.5.3",
+    "numpy": "2.4.6",
+    "pandas": "3.0.5"
+  },
+  "dataset_scope": {
+    "train_samples": 2511,
+    "face_count": 1277,
+    "nonface_count": 1234,
+    "features_count": 258,
+    "window_size": [
+      24,
+      24
+    ],
+    "feature_max_diff_train": 0.0
+  },
+  "models": {
+    "AdaBoost": {
+      "filename": "adaboost.joblib",
+      "is_baseline": false,
+      "score_method": "decision_function",
+      "score_label": "Điểm quyết định",
+      "default_rule": "decision_function >= 0",
+      "selected_threshold": 0.026787453434552827,
+      "decision_rule": "score >= 0.026787",
+      "description": "AdaBoost (100 Decision Stumps) - Thuật toán trọng tâm đề tài",
+      "file_size_bytes": 67109
+    },
+    "SVM RBF": {
+      "filename": "svm_rbf.joblib",
+      "is_baseline": false,
+      "score_method": "decision_function",
+      "score_label": "Điểm quyết định",
+      "default_rule": "decision_function >= 0",
+      "selected_threshold": -0.018045134113052197,
+      "decision_rule": "score >= -0.018045",
+      "description": "Support Vector Machine với nhân RBF, chuẩn hóa StandardScaler",
+      "file_size_bytes": 1421293
+    },
+    "Random Forest": {
+      "filename": "random_forest.joblib",
+      "is_baseline": false,
+      "score_method": "predict_proba[:, 1]",
+      "score_label": "Xác suất ước lượng lớp face",
+      "default_rule": "predict_proba >= 0.5",
+      "selected_threshold": 0.5061666666666668,
+      "decision_rule": "score >= 0.506167",
+      "description": "Random Forest (200 cây quyết định, min_samples_leaf=2)",
+      "file_size_bytes": 3172434
+    },
+    "Logistic Regression": {
+      "filename": "logistic_regression.joblib",
+      "is_baseline": false,
+      "score_method": "decision_function",
+      "score_label": "Điểm quyết định",
+      "default_rule": "decision_function >= 0",
+      "selected_threshold": 0.5389142036437988,
+      "decision_rule": "score >= 0.538914",
+      "description": "Logistic Regression (lbfgs, C=1.0), chuẩn hóa StandardScaler",
+      "file_size_bytes": 8589
+    },
+    "k-NN": {
+      "filename": "knn.joblib",
+      "is_baseline": false,
+      "score_method": "predict_proba[:, 1]",
+      "score_label": "Xác suất ước lượng lớp face",
+      "default_rule": "predict_proba >= 0.5",
+      "selected_threshold": null,
+      "decision_rule": "keep_default (predict)",
+      "description": "k-Nearest Neighbors (k=5, khoảng cách Minkowski p=2)",
+      "file_size_bytes": 2618950
+    },
+    "Decision Tree": {
+      "filename": "decision_tree.joblib",
+      "is_baseline": false,
+      "score_method": "predict_proba[:, 1]",
+      "score_label": "Xác suất ước lượng lớp face",
+      "default_rule": "predict_proba >= 0.5",
+      "selected_threshold": null,
+      "decision_rule": "keep_default (predict)",
+      "description": "Cây quyết định đơn (max_depth=5, min_samples_leaf=2)",
+      "file_size_bytes": 6138
+    },
+    "DummyClassifier": {
+      "filename": "dummy_classifier.joblib",
+      "is_baseline": true,
+      "score_method": "predict_proba[:, 1]",
+      "score_label": "Xác suất ước lượng lớp face",
+      "default_rule": "predict() [most_frequent]",
+      "selected_threshold": null,
+      "decision_rule": "keep_default (baseline)",
+      "description": "Mô hình mốc cơ sở: luôn dự đoán lớp đa số trong tập huấn luyện (face = 1)",
+      "file_size_bytes": 728
+    }
+  }
+}

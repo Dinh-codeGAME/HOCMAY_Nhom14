@@ -1,0 +1,119 @@
+{
+  "captured_at_utc": "2026-11-26T16:12:09.507251+00:00",
+  "os": {
+    "platform": "Windows-11-10.0.26300-SP0",
+    "caption": "Microsoft Windows 11 Home",
+    "version": "10.0.26300"
+  },
+  "python": {
+    "version": "3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]",
+    "executable": "C:\\Users\\mrddd\\AppData\\Local\\Programs\\Python\\Python312\\python.exe"
+  },
+  "hardware": {
+    "cpu_name": "AMD Ryzen 7 7840H w/ Radeon 780M Graphics      ",
+    "physical_cores": 8,
+    "logical_processors": 16,
+    "max_clock_mhz": 3801,
+    "total_ram_kb": 15927668,
+    "total_ram_gib": 15.19,
+    "free_ram_kb_at_capture": 3642348,
+    "free_ram_gib_at_capture": 3.47
+  },
+  "python_packages": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "joblib": "1.5.3",
+    "matplotlib": "3.11.1",
+    "seaborn": "0.13.2",
+    "Pillow": "12.2.0",
+    "streamlit": "1.67.0",
+    "nbformat": "5.11.1",
+    "nbclient": "0.10.4",
+    "ipykernel": "7.4.0",
+    "cv2": "4.13.0",
+    "optuna": null,
+    "lightgbm": null,
+    "xgboost": null,
+    "skimage": null
+  },
+  "cli_and_latex_tools": {
+    "agy": {
+      "installed": true,
+      "path": "C:\\Users\\mrddd\\.gemini\\bin\\agy.EXE",
+      "version": "1.5.18",
+      "non_interactive_flags_verified_from_help": [
+        "--print / -p",
+        "--output-format (text|json|stream-json)",
+        "--input-format (text|stream-json)",
+        "--json-schema",
+        "--print-timeout",
+        "--mode (accept-edits|auto|plan)",
+        "--sandbox",
+        "--dangerously-skip-permissions"
+      ]
+    },
+    "pdflatex": {
+      "installed": false,
+      "path": null
+    },
+    "xelatex": {
+      "installed": false,
+      "path": null
+    },
+    "lualatex": {
+      "installed": false,
+      "path": null
+    },
+    "latexmk": {
+      "installed": false,
+      "path": null
+    },
+    "tectonic": {
+      "installed": false,
+      "path": null
+    },
+    "bibtex": {
+      "installed": false,
+      "path": null
+    },
+    "biber": {
+      "installed": false,
+      "path": null
+    },
+    "pandoc": {
+      "installed": false,
+      "path": null
+    },
+    "git": {
+      "installed": true,
+      "path": "C:\\Program Files\\Git\\cmd\\git.EXE"
+    }
+  },
+  "skills_inventory": {
+    "user_config_skills": [
+      "ictu-thesis-writer"
+    ],
+    "builtin_skills": [
+      "agy-customizations",
+      "antigravity_guide",
+      "automation",
+      "conversations",
+      "generative_ui",
+      "mcp-app-development",
+      "migrate-agent-settings",
+      "migrate-workflows",
+      "native_swarm",
+      "permissioned-github",
+      "plugin",
+      "run-workflow",
+      "swarm_monitor",
+      "swarm_narrator",
+      "swarm_pane",
+      "ui-plugin-navigation"
+    ],
+    "project_gemini": []
+  },
+  "latex_sources_in_project_or_parent": []
+}
